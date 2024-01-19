@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package pb;
+
+import "user.proto";
+
+option go_package = "github.com/Kazukite12/simple-bank/pb";
+
+message CreateAccountRequest {
+    string currency = 1;
+}
+
+message CreateAccountResponse {
+    string owner = 1;
+    string balance = 2;
+    string currency = 3;
+}
+
+

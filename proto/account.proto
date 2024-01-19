@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package pb;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "github.com/Kazukite12/simple-bank/pb";
+
+message Account {
+    string owner = 1;
+    string balance = 2;
+    string currency = 3;
+    google.protobuf.Timestamp created_at = 4;
+}
+
+
+
+
+
